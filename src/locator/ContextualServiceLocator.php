@@ -1,4 +1,5 @@
-<?php
+<?php /** @noinspection PhpUnused */
+
 namespace amocrmtech\base\locator;
 
 use Closure;
