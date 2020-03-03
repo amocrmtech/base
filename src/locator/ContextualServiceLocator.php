@@ -15,7 +15,7 @@ use yii\di\ServiceLocator;
 class ContextualServiceLocator extends ServiceLocator implements ContextualServiceLocatorInterface
 {
     /** @var string */
-    public $prefix = 'amo';
+    public $prefix = 'amocrmtech';
     /** @var string|null */
     private $context;
 
