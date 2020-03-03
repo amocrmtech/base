@@ -1,0 +1,31 @@
+{
+  "name": "amocrmtech/base",
+  "description": "Base",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Kulikov",
+      "email": "r.v.kulikov@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "ext-pdo": "*",
+    "yiisoft/yii2": "~2.0.30"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "amocrmtech\\base\\": "src/"
+    }
+  }
+}
