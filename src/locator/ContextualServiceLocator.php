@@ -9,13 +9,8 @@ use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 use yii\di\ServiceLocator;
 
-/**
- *
- */
 class ContextualServiceLocator extends ServiceLocator implements ContextualServiceLocatorInterface
 {
-    /** @var string */
-    public $prefix = 'amocrmtech';
     /** @var string|null */
     private $context;
 
@@ -72,7 +67,7 @@ class ContextualServiceLocator extends ServiceLocator implements ContextualServi
      */
     private function generateServiceId($componentId, $id): string
     {
-        return "{$this->prefix}_{$componentId}_{$this->getCurrentId($id)}";
+        return "{$componentId}_{$this->getCurrentId($id)}";
     }
 
     /**
